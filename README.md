@@ -16,7 +16,8 @@ Aquí te presento tres razones principales:
 
 3. **Contribución con Alegría**  
    Estoy emocionada por contribuir y aprender en un entorno dinámico, ¡y prometo hacerlo con una sonrisa y un toque de creatividad!
-![Interfaz](image.png)
+![Interfaz](https://github.com/user-attachments/assets/2bdb60a4-0519-4177-990f-7bdd7aec34c2)
+
 
 ## Cómo Clonar Este Repositorio
 a. Clona el repositorio a tu máquina local:
