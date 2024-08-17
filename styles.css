@@ -12,18 +12,20 @@ body {
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
 .container {
+    display: flex;
     text-align: center;
     max-width: 1000px;
-    
+    flex-direction: column;
+    align-items: center;
 }
 .container-social-links {
     text-align: center;
     max-width: 1000px;
     margin-top: 150px;
+
 }
 
 h1 {
@@ -37,11 +39,10 @@ h2 {
 
 .card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 40px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 50px;
-    
 }
 
 .card {
@@ -97,6 +98,7 @@ h2 {
 
 .social-links {
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .social-links a {
@@ -110,5 +112,67 @@ h2 {
     text-decoration: underline;
 }
 
+.contact {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
 
+h1 {
+    text-align: center;
+    color: #333;
+}
 
+.form-group {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#contactForm{
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: green;
+}
