@@ -8,4 +8,23 @@ document.querySelectorAll('.card').forEach(card => {
     });
 });
 
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío del formulario
+
+    // Obtener los valores de los campos
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Validar los datos
+    if (firstName && lastName && email && message) {
+        // Mostrar un alert de éxito
+        alert("¡Mensaje enviado con éxito!");
+    } else {
+        // Mostrar un alert de error
+        alert("Por favor, completa todos los campos.");
+    }
+});
+
 
