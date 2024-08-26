@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primario: #180161;
+  --color-secundario: #4F1787;
+  --color-terciario: #EB3678;
+  --color-hover: #FB773C;
+
+  --fuente-Montserrat: "Montserrat", sans-serif;
+  --fuente-krona: "Krona One", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  font-family: var(--fuente-Montserrat);
+  line-height: 1.6;
+}
+
+.header {
+  padding: 2% 0;
+  background-color: var(--color-secundario);
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.header__menu__link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-terciario);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header__menu__link:hover {
+  color: var(--color-hover);
+}
+
+h1 {
+  color: var(--color-terciario);
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--fuente-krona);
+  font-size: 2.5rem;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 15%;
+  gap: 50px;
+  text-align: center;
+}
+
+.presentacion__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+}
+
+.presentacion__contenido__titulo {
+  font-size: 2.25rem;
+  font-family: var(--fuente-krona);
+  color: var(--color-secundario);
+}
+
+.presentacion__contenido__texto {
+  font-size: 1.5rem;
+}
+
+.presentacion__enlaces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo {
+  font-family: var(--fuente-krona);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.presentacion__enlaces__link {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-secundario);
+  border: 2px solid var(--color-terciario);
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.presentacion__enlaces__link:hover {
+  background-color: var(--color-hover);
+  color: var(--color-primario);
+}
+
+.presentacion__imagen {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: var(--color-terciario);
+  padding: 1.5rem;
+  color: var(--color-primario);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Estilos del formulario de contacto */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--color-secundario);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--fuente-Montserrat);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: var(--color-terciario);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--fuente-Montserrat);
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--color-hover);
+}
+
+@media (max-width: 1250px) {
+  .header {
+    padding: 5%;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .presentacion {
+    padding: 10%;
+  }
+
+  .presentacion__contenido {
+    width: 100%;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .presentacion {
+    padding: 5%;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header__menu__link {
+    font-size: 1.2rem;
+  }
+
+  .presentacion__contenido__titulo,
+  .presentacion__enlaces__subtitulo {
+    font-size: 2rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+}
